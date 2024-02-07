@@ -1,0 +1,176 @@
+
+img{
+    max-width: 100%;
+    font-style: italic;
+    height: auto;
+    vertical-align: middle;
+}
+
+.nutshell-container{
+    transform: translateY(90px)
+}
+
+.about-me-container{
+width: min(85%, 1680px);
+margin-inline: auto;
+margin-top: 80px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.img-container,.my-self{
+    border-radius: 19.2px;
+    height: 380px;
+    max-width: 300px;
+    margin-bottom: 20%;
+    margin-left: 50%;
+}
+
+.what-i-do{
+    max-width: 608px;
+    /* color: ; */
+    margin-top: -96px;
+    text-align: justify;
+   
+}
+
+.stack{
+    margin-block: 16px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.myStatement{
+line-height: 22.4px;
+font-size:small;
+color: gray;
+}
+
+.contact-me-icons{
+    display: flex;
+    gap: 8px;
+    margin-block: 1rem;
+    justify-content: center;
+    font-size: 28.8px;
+}
+
+.contact-icon-btns{
+    -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+transition: all 0.5s;
+    all: unset;
+}
+
+.contact-icon-btns:hover{
+transform: translateY(-2px);
+
+}
+
+.contact-me-links{
+all: unset;
+cursor: pointer;
+/* color: var(--greyish); */
+}
+
+.work-button {
+  all:unset;
+  border: 1.5px solid rgb(86, 57, 57);;
+  border-radius: 5px;
+  color: #4d4d4d ;
+  font-size: 1rem;
+  padding: 0.8rem 1.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+margin-inline: auto;
+}
+.work-button:hover{
+  color: powderblue;
+  background-color: rgb(231, 224, 231);
+
+}
+.my-works-link{
+    all: unset;
+}
+
+@media (min-width: 480px){
+.img-container,.my-img{
+    border-radius: 19.2px;
+    height: 360px;
+    width: 300px;
+}
+
+}
+
+
+@media (min-width: 720px){
+.about-me-container{
+flex-direction: row;
+}
+
+.what-i-do{
+    margin-top: 0px;
+    text-align: left;
+    max-width: 400px;
+}
+
+.contact-me-icons{
+    justify-content: flex-start;
+}
+
+.stack{
+    font-size: 32px;
+}
+.myStatement{
+line-height: 19.2px;
+font-size: 22.4px;
+}
+
+.works-button {
+  margin-inline: 0px;
+  font-size: 19.2px;
+  padding: 12.8px 32px;
+}
+
+}
+
+
+@media (min-width: 800px){
+.what-i-do{
+    margin-top: 0px;
+    text-align: left;
+    max-width: 560px;
+}
+}
+
+
+@media (min-width: 880px){
+.what-i-do{
+    margin-top: 0px;
+    text-align: left;
+    max-width: 640px;
+}
+
+.stack{
+    font-size: 35.2px;
+}
+}
+
+@media (min-width: 1040){
+.what-i-do{
+    margin-top: 0px;
+    text-align: left;
+    max-width: 720px;
+}
+
+.stack{
+    font-size: 36.8px;
+}
+.work-button {
+  font-size: 20.8px;
+  padding: 14.4px 32px;
+}
+
+}
