@@ -1,26 +1,45 @@
+import React from "react";
+import {Route, Routes } from "react-router-dom";
+import Layout from './components/ui/layout/Layout';
+import NavBar from './components/ui/navBar/NavBar';
+import Footer from './components/ui/footer/Footer';
+import Work from './components/pages/work/Work';
+import NotFound from './components/pages/notFound/NotFound';
+import './index.css';
+import Contact from './components/pages/contact/Contact'
+import Nutshell from './components/pages/nutshell/Nutshell';
 
-import './App.css';
-import {BrowserRouter as Router,Route, Routes } from "react-router-dom"
-import HomePage from './components/Pages/HomePage';
-import Layout from './components/Layout';
+
+
+
+const myRoutes = [
+  {path: '/nutshell', component: <Nutshell />, exact: true},
+  {path: '/contact', component: <Contact /> },
+  {path: '/work', component: <Work /> },
+  {path: '*', component: <NotFound />},
+];
 
 
 function App() {
+
     return (
-             <div className="App">
-        <Router>
+      <div className="App">
+         <NavBar/>
+        <Layout/>
+        <main className='main-content'>
               <Routes>
-                <Route path="/" element={<Layout />}>
-                  <Route index element={<HomePage />} />
-              </Route>
-                
+              {myRoutes.map(({component, path})=>(  
+             <Route path={path} key={path} 
+             element={component} />))}
             </Routes>
-        </Router>
+            </main>
+            <Layout/>
+            <Footer/>
           </div>
-     
+        
        )
     
-  }
+  };
 
 
 export default App;

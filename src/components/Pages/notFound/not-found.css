@@ -1,0 +1,32 @@
+.not-found > p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.status-code {
+    font-size: 10rem;
+    font-weight: 700;
+    margin-top: 80px;
+}
+.not-found .alert-message{
+    font-size: 18px;
+    color: gray;
+}
+.not-found{
+    margin: 0px auto;
+    width: fit-content;
+    text-align: center;
+    
+}
+
+@media(max-width: 768px){
+    .status-code{
+        font-size: 16px;
+    }
+    .not-found> p:nth-child(2){
+        font-size: 16px;
+    }
+    .not-found .alert-message{
+        font-size: 12px;
+    }
+
+}

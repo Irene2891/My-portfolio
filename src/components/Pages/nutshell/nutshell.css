@@ -1,0 +1,125 @@
+
+.nutshell-wrapper{
+    transform: translateY(90px);
+}
+
+.about-me-container{
+margin-top: 40px; 
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.my-image {
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover; 
+    object-position: center;
+}
+
+.my-image-wrapper{
+    margin-right: 20px;
+}
+
+.my-profile{
+    text-align: center;
+    margin-left: 40px;
+   
+}
+
+.designation{
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.summary{
+color: gray;
+margin-bottom: 20px;
+}
+
+.my-works-link:hover{
+  color: var(--primary-color);
+
+}
+.my-works-link{
+    all: unset;
+    border-bottom: 1.5px solid var(--primary-color);
+    margin-top: 20px;
+    
+}
+
+@media (min-width: 480px){
+.img-container,.my-image{
+    border-radius: var(--input-border-radius);
+    height: 360px;
+    width: 300px;
+}
+
+}
+
+@media (min-width: 720px){
+.about-me-container{
+flex-direction: row;
+}
+
+.my-profile{
+    margin-top: 0px;
+    text-align: left;
+    max-width: 400px;
+}
+
+.designation{
+    font-size: 32px;
+}
+.summary{
+font-size: 20px;
+}
+
+.works-button {
+  margin-inline: 0px;
+  font-size: 19.2px;
+  padding: 12.8px 32px;
+}
+
+}
+
+
+@media (min-width: 800px){
+.my-profile{
+    margin-top: 0px;
+    text-align: left;
+    max-width: 560px;
+}
+}
+
+
+@media (min-width: 880px){
+.my-profile{
+    margin-top: 0px;
+    text-align: left;
+    max-width: 640px;
+}
+
+.designation{
+    font-size: 35.2px;
+}
+}
+
+@media (min-width: 1040){
+.my-profile{
+    margin-top: 0px;
+    text-align: left;
+    max-width: 720px;
+}
+
+.designation{
+    font-size: 36.8px;
+}
+.work-button {
+  font-size: 20.8px;
+  padding: 14.4px 32px;
+}
+
+}

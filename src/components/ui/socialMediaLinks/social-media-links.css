@@ -1,0 +1,22 @@
+.social-link-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35em;
+    
+
+}
+
+.social-link-btns{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+   -o-transition: all 0.5s;
+    transition: all 0.5s;
+    all: unset;
+    margin: 0 5px;
+}
+
+.social-links{
+all: unset;
+cursor: pointer;
+}

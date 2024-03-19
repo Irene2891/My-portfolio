@@ -1,21 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
-body {
-  --bg:  ;
-  --card-bg: rgb(86, 57, 57);
-}
-* {
-  font-family: 'Nunito', sans-serif;
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  
-}
+
 
 .flex-container {
   display: flex;
   gap: 20px;
   background-color: var(--bg, #4d4d4d);
-  margin-top: 9%;
+  margin-top: 5%;
 }
 
 .trees {

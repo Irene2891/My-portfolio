@@ -1,0 +1,15 @@
+.footer{
+  position: relative;
+  padding: 20px;
+  margin-top: 9%;
+}
+.footer p{
+    margin-left: 9.5rem;
+    font-size: 0.9em;
+}
+.footer-links{
+    position: absolute; 
+    bottom: 20px;
+    left: 95%; 
+    transform: translateX(-50%);   
+}
